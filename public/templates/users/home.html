@@ -1,0 +1,105 @@
+<div>
+<div class="w3-top" >
+  <div class="w3-bar"  id="myNavbar" >
+    
+      <a href="#" class="w3-bar-item"> 
+          <img src="assets/alimenta.jpg" alt="" style="width: 50px; height: 50px;"></a>
+          <div class="w3-right w3-padding-large">
+              <a href="" class="w3-bar-item w3-button">Beranda</a>
+              <a href="#tentang_kami" class="w3-bar-item w3-button">Tentang Kami</a>
+              <a href="#produk" class="w3-bar-item w3-button">Produk</a>
+              <a href="#hubungi_kami" class="w3-bar-item w3-button">Hubungi Kami</a>
+
+          </div>
+  </div>
+</div>
+
+<div class="mySlides w3-display-container w3-center">
+  <img src="https://o-cdf.sirclocdn.com/unsafe/o-cdn-cas.sirclocdn.com/parenting/images/sarung-salat.width-800.format-webp.webp" style="width:100%; opacity: 0.7;">
+  <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h3>Alimenta</h3>
+    <p><b>Toko Sarung Indonesia</b></p>   
+  </div>
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="https://cdn2.tstatic.net/tribunnewswiki/foto/bank/images/sarung.jpg" style="width:100%">
+
+</div>
+<div class="mySlides w3-display-container w3-center">
+  <img src="https://cdn.popmama.com/content-images/community/20221013/community-53ad14bcda757fdc327fa484bdbd4cb2.jpg" style="width:100%">
+
+</div>
+
+  <div id="tentang_kami" class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide">Alimenta</h2>
+      <p class="w3-opacity"><i>Bu Putri</i></p>
+      <p class="w3-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>        
+  </div>
+      <div id="produk" class="w3-container w3-light-grey ">
+          <div class="w3-center w3-padding-large">
+              <h2 class="w3-wide">Produk Kami</h2>
+              
+          </div>
+          <div class="w3-container w3-padding-large">
+            <div class="w3-dropdown-hover w3-black">
+              <button class="w3-button">Kategori</button>
+              <div  class="w3-dropdown-content w3-bar-block w3-card-4" >
+                <div class="" >
+                  <a ng-repeat="x in kategori" id="kat" class="w3-bar-item w3-button w3-border w3-black" ng-click="filter(x.kategori)">{{x.kategori}}</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="w3-container" >
+              <div class="w3-row " >
+                  <div class="w3-col l4 w3-padding w3-padding-large " ng-repeat="x in filterBarang">
+                      <div class="card"  >
+                          <img src="{{ x.gambar }}" alt="" style="height: 100%;" class="img">
+
+                      </div>
+                  </div>
+
+          </div>
+
+          <div class="w3-center w3-padding-large">
+              <a ng-click="loadmore(barang.length)" class="w3-button w3-border w3-white"> Load More</a>
+          </div>
+      </div>
+      </div>
+     
+  <div id="hubungi_kami" class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">Hubugi Kami</h2>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i>Perumahan Pesona Griya<br>
+          <i class="fa fa-phone" style="width:30px"></i> +62 821-3332-2761<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Alimenta@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+          <p style="margin-top: -25px;">Silahkan tinggalkan pesan</p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Nama">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Pesan">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by <a href="" target="_blank">Rentalase</a></p>
+    </footer>
+  </div>

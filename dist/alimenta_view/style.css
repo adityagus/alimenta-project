@@ -1,0 +1,17 @@
+.card{
+    height:300px ;
+    width: auto;
+    background-color: white;
+    box-shadow:10px 5px 5px 0px darkgray;
+    border-radius: 10%;
+}
+.card > img{
+    border-radius: 10%;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.aksi{
+    margin-right: 30%;
+}

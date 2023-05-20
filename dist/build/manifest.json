@@ -1,0 +1,17 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-829fb0a8.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-973c301f.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/controllers/userController.js": {
+    "file": "assets/userController-f7a15438.js",
+    "isEntry": true,
+    "src": "resources/js/controllers/userController.js"
+  }
+}
